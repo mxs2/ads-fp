@@ -3,7 +3,7 @@ programa {
     inteiro x
     logico y 
     leia(x)
-    y = (x > 18)
+    y = (x >= 18)
     escreva(y)
   }
 }
