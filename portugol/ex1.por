@@ -13,7 +13,7 @@ programa {
       r = r + (qnt[i] * n[i])
     }
 
-    r = r + cake 
+    r = ((r + cake) / 11) 
     escreva(r)
   }
 }
