@@ -11,7 +11,7 @@ programa {
             escreva("Seu smartphone é atual")
         } 
         senao se (y > 3 e y <= 5) {
-            escreva("Seu smartphone é atual")
+            escreva("Seu smartphone está moderamente desatualizado")
         } 
         senao se (y > 5) {
             escreva("Seu smartphone está obsoleto")
