@@ -1,33 +1,24 @@
 programa {
     funcao inicio() {
-        real n[3][3], r[3]
-        cadeia student[3]
-        inteiro i, j
+        real n[3], r 
+        cadeia student
+        inteiro i
+
+        leia(student)
 
         para (i = 0; i < 3; i++) {
-            leia(student[i])
-
-            para (j = 0; j < 3; j++) {
-                leia(n[i][j])
-            }
-
-            r[i] = ((n[i][0] * 2 + n[i][1] * 3 + n[i][2] * 5) / (2 + 3 + 5))
+            leia(n[i]) 
         }
+            r = ((n[0] * 2 + n[1] * 3 + n[2] * 5) / (2 + 3 + 5))
+            
+            escreva("\n", student, "\n")
 
-        para (i = 0; i < 3; i++) {
-            escreva("\n", student[i], "\n")
-
-            para (j = 0; j < 3; j++) {
-                escreva(n[i][j], "\n")
-            }
-
-            se (r[i] <= 4.9) {
-                escreva(r[i], ", reprovado", "\n")
-            } senao se (r[i] >= 5 e r[i] <= 6.9) {
-                escreva(r[i], ", recuperação", "\n")
+            se (r <= 4.9) {
+                escreva(r, ", reprovado", "\n")
+            } senao se (r >= 5 e r <= 6.9) {
+                escreva(r, ", recuperação", "\n")
             } senao {
-                escreva(r[i], ", aprovado", "\n")
+                escreva(r, ", aprovado", "\n")
             }
         }
     }
-}
