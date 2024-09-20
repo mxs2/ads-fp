@@ -10,19 +10,19 @@ programa {
         se (r < 18.5) {
             escreva("\n", "abaixo do peso")
         } 
-        senao se (r >= 18.5 e r < 24.9) {
+        senao se (r >= 18.5 e r < 25) {
             escreva("\n", "peso ideal")
         } 
-        senao se (r >= 25 e r < 29.9) {
+        senao se (r >= 25 e r < 30) {
             escreva("\n", "sobrepeso")
         } 
-        senao se (r >= 30 e r < 39.9) {
+        senao se (r >= 30 e r < 40) {
             escreva("\n", "obesidade")
         } 
         senao {
             escreva("\n", "obesidade mórbida")
         }
 
-        escreva("\n", r, "\n")
+        escreva("\n", r)
     }
 }
