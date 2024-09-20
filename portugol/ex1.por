@@ -1,6 +1,6 @@
 programa {
   funcao inicio() {
-    real cake, n[3], qnt[3], r
+    real cake, n[3], qnt[3], r, p
     inteiro i
 
     r = 0.0
@@ -13,7 +13,10 @@ programa {
       r = r + (qnt[i] * n[i])
     }
 
-    r = ((r + cake) / 11) 
-    escreva(r)
+    r = r + cake
+    p = (r / 11) 
+
+    escreva("\n", r)
+    escreva("\n", p)
   }
 }
