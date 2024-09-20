@@ -14,6 +14,6 @@ programa {
             r = h * 10
         }
 
-        escreva(r)
+        escreva("\n", r)
     }
 }
