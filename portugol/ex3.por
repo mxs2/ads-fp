@@ -14,11 +14,11 @@ programa {
             escreva("\n", student, "\n")
 
             se (r <= 4.9) {
-                escreva(r, ", reprovado", "\n")
+                escreva(r, ", reprovado")
             } senao se (r >= 5 e r <= 6.9) {
-                escreva(r, ", recuperação", "\n")
+                escreva(r, ", recuperação")
             } senao {
-                escreva(r, ", aprovado", "\n")
+                escreva(r, ", aprovado")
             }
         }
     }
